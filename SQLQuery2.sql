@@ -1,0 +1,9 @@
+IF EXISTS (
+    SELECT 1
+    FROM INfORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = 'dbo'
+    AND TABLE_NAME = 'OLE DB Student'
+)
+begin;
+DELETE FROM [dbo].[OLE DB Student];
+end;
